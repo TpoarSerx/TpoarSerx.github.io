@@ -8,109 +8,193 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header>
+    <!-- Floating Side Navigation -->
+    <nav class="side-nav" id="sideNav">
+        <a href="#about" class="nav-dot active" data-section="about" title="About">
+            <span class="dot"></span>
+            <span class="nav-label">About</span>
+        </a>
+        <a href="#education" class="nav-dot" data-section="education" title="Education">
+            <span class="dot"></span>
+            <span class="nav-label">Education</span>
+        </a>
+        <a href="#experience" class="nav-dot" data-section="experience" title="Experience">
+            <span class="dot"></span>
+            <span class="nav-label">Experience</span>
+        </a>
+        <a href="#research" class="nav-dot" data-section="research" title="Research">
+            <span class="dot"></span>
+            <span class="nav-label">Research</span>
+        </a>
+        <a href="#skills" class="nav-dot" data-section="skills" title="Skills">
+            <span class="dot"></span>
+            <span class="nav-label">Skills</span>
+        </a>
+        <a href="#contact" class="nav-dot" data-section="contact" title="Contact">
+            <span class="dot"></span>
+            <span class="nav-label">Contact</span>
+        </a>
+    </nav>
+
+    <div class="layout">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
             <div class="avatar">KX</div>
             <h1>K.X.</h1>
-            <p class="subtitle">Electrical Engineering & AI · Energy Systems</p>
-            <div class="links">
-                <a href="https://github.com/TpoarSerx" target="_blank">GitHub</a>
-                <span class="sep">·</span>
-                <a href="mailto:contact@example.com">Email</a>
+            <p class="subtitle">Electrical Engineering & AI<br>Energy Systems</p>
+            <div class="sidebar-links">
+                <a href="https://github.com/TpoarSerx" target="_blank">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    GitHub
+                </a>
+                <a href="mailto:contact@example.com">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    Email
+                </a>
             </div>
-        </header>
+            <div class="sidebar-footer">
+                © 2026 K.X.
+            </div>
+        </aside>
 
-        <!-- About -->
-        <section>
-            <h2>About</h2>
-            <p>
-                Electrical engineering student with a passion for the intersection of 
-                <strong>energy systems</strong> and <strong>artificial intelligence</strong>. 
-                Currently working on energy management systems and industrial IoT, 
-                with a focus on smart grid optimization and data-driven energy efficiency.
-            </p>
-            <p>
-                I enjoy understanding how cities evolve — reading urban planning like a blueprint 
-                of human civilization, from historical layers to future possibilities.
-            </p>
-        </section>
+        <!-- Main Content -->
+        <main class="content">
+            <!-- About -->
+            <section id="about">
+                <h2>About</h2>
+                <p>
+                    Electrical engineering student with a passion for the intersection of 
+                    <strong>energy systems</strong> and <strong>artificial intelligence</strong>. 
+                    Currently working on energy management systems and industrial IoT, 
+                    with a focus on smart grid optimization and data-driven energy efficiency.
+                </p>
+                <p>
+                    I enjoy understanding how cities evolve — reading urban planning like a blueprint 
+                    of human civilization, from historical layers to future possibilities.
+                </p>
+            </section>
 
-        <!-- Education -->
-        <section>
-            <h2>Education</h2>
-            <div class="entry">
-                <div class="entry-header">
-                    <span class="title">Hubei Polytechnic University</span>
-                    <span class="date">2026.09 – 2028.06</span>
+            <!-- Education -->
+            <section id="education">
+                <h2>Education</h2>
+                <div class="entry">
+                    <div class="entry-header">
+                        <span class="title">Hubei Polytechnic University</span>
+                        <span class="date">2026.09 – 2028.06</span>
+                    </div>
+                    <div class="detail">B.Eng. in Electrical Engineering & Automation</div>
                 </div>
-                <div class="detail">B.Eng. in Electrical Engineering & Automation</div>
-            </div>
-            <div class="entry">
-                <div class="entry-header">
-                    <span class="title">Huanggang Polytechnic College</span>
-                    <span class="date">2023 – 2026</span>
+                <div class="entry">
+                    <div class="entry-header">
+                        <span class="title">Huanggang Polytechnic College</span>
+                        <span class="date">2023 – 2026</span>
+                    </div>
+                    <div class="detail">Diploma in Electrical Engineering · Ranked 1st in major</div>
                 </div>
-                <div class="detail">Diploma in Electrical Engineering · Ranked 1st in major</div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Experience -->
-        <section>
-            <h2>Experience</h2>
-            <div class="entry">
-                <div class="entry-header">
-                    <span class="title">Energy Management System Operator</span>
-                    <span class="date">2025 – Present</span>
+            <!-- Experience -->
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="entry">
+                    <div class="entry-header">
+                        <span class="title">Energy Management System Operator</span>
+                        <span class="date">2025 – Present</span>
+                    </div>
+                    <div class="detail">
+                        Hong'an Cigarette Factory · Operations & Maintenance<br>
+                        <small>Industrial IoT data monitoring · SQL Server database management · 
+                        Energy efficiency analysis · PLC integration (Siemens 828D)</small>
+                    </div>
                 </div>
-                <div class="detail">
-                    Hong'an Cigarette Factory · Operations & Maintenance<br>
-                    <small>Industrial IoT data monitoring · SQL Server database management · 
-                    Energy efficiency analysis · PLC integration (Siemens 828D)</small>
+            </section>
+
+            <!-- Research Interests -->
+            <section id="research">
+                <h2>Research Interests</h2>
+                <div class="tags">
+                    <span class="tag">Smart Grid</span>
+                    <span class="tag">Energy Management</span>
+                    <span class="tag">AI + Electrical Engineering</span>
+                    <span class="tag">Industrial IoT</span>
+                    <span class="tag">PLC & Automation</span>
+                    <span class="tag">Data-Driven Optimization</span>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Awards -->
-        <section>
-            <h2>Awards & Honors</h2>
-            <ul class="awards">
-                <li>🏆 National Competition Award (College Level)</li>
-                <li>🎓 Merit-based Admission to Bachelor's Program</li>
-                <li>📈 Ranked 1st in Major · Huanggang Polytechnic College</li>
-            </ul>
-        </section>
+            <!-- Skills -->
+            <section id="skills">
+                <h2>Technical Skills</h2>
+                <div class="tags">
+                    <span class="tag">Siemens 828D PLC</span>
+                    <span class="tag">SQL Server</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Energy Analytics</span>
+                    <span class="tag">AI Agent Development</span>
+                    <span class="tag">IoT Protocols</span>
+                </div>
+            </section>
 
-        <!-- Research Interests -->
-        <section>
-            <h2>Research Interests</h2>
-            <div class="tags">
-                <span class="tag">Smart Grid</span>
-                <span class="tag">Energy Management</span>
-                <span class="tag">AI + Electrical Engineering</span>
-                <span class="tag">Industrial IoT</span>
-                <span class="tag">PLC & Automation</span>
-                <span class="tag">Data-Driven Optimization</span>
-            </div>
-        </section>
+            <!-- Awards -->
+            <section>
+                <h2>Awards & Honors</h2>
+                <ul class="awards">
+                    <li>🏆 National Competition Award (College Level)</li>
+                    <li>🎓 Merit-based Admission to Bachelor's Program</li>
+                    <li>📈 Ranked 1st in Major · Huanggang Polytechnic College</li>
+                </ul>
+            </section>
 
-        <!-- Skills -->
-        <section>
-            <h2>Technical Skills</h2>
-            <div class="tags">
-                <span class="tag">Siemens 828D PLC</span>
-                <span class="tag">SQL Server</span>
-                <span class="tag">Python</span>
-                <span class="tag">Energy Analytics</span>
-                <span class="tag">AI Agent Development</span>
-                <span class="tag">IoT Protocols</span>
-            </div>
-        </section>
+            <!-- Contact -->
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Feel free to reach out for collaborations or discussions on energy systems, AI, and urban planning.</p>
+                <div class="contact-links">
+                    <a href="mailto:contact@example.com" class="contact-btn">📧 Email</a>
+                    <a href="https://github.com/TpoarSerx" target="_blank" class="contact-btn">💻 GitHub</a>
+                </div>
+            </section>
 
-        <!-- Footer -->
-        <footer>
-            <p>© 2026 K.X. · Built with ❤️ and GitHub Pages</p>
-        </footer>
+            <!-- Footer -->
+            <footer>
+                <p>Built with ❤️ and GitHub Pages</p>
+            </footer>
+        </main>
     </div>
+
+    <script>
+        // Side navigation scroll tracking
+        const sections = document.querySelectorAll('section[id]');
+        const navDots = document.querySelectorAll('.nav-dot');
+
+        function updateActiveNav() {
+            let current = '';
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 120) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navDots.forEach(dot => {
+                dot.classList.remove('active');
+                if (dot.getAttribute('data-section') === current) {
+                    dot.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNav);
+
+        // Smooth scroll for nav clicks
+        navDots.forEach(dot => {
+            dot.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
